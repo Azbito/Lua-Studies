@@ -78,10 +78,17 @@ while items < 10 do
   items = items + 1
 end
 
+-- For Loop
+
+diamonds = 0
+
+for i=1, 3, 1 do 
+  diamonds = diamonds + i
+end
 
 function love.draw()
   --this function is used to *setFont* and make it bigger. Font size is based on pixels. E.g 50
   love.graphics.setFont(love.graphics.newFont(30)) 
    -- printing some text in the game with variable. E.g love.graphics.print(quote)
-  love.graphics.print(items)
+  love.graphics.print(diamonds)
 end
